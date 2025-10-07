@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "npm install && tsc",
+    "build": "npm ci && tsc",
     "start": "node dist/server.js",
     "migrate": "npx prisma migrate deploy"
   },
@@ -32,6 +32,8 @@
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.7.0",
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.19",
     "prisma": "^6.16.3",
     "tsx": "^4.7.0",
     "typescript": "^5.9.3"
